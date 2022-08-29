@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+html {
+    font-size: 1.4em;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+
+header{
+    background-color: #05FE62;
+    width: 100%;
+    height: 120px;
+    border-radius: 0 0 10px 10px;
+    padding: 20px 25px 0;
+    
+}
+
+header p.header_title {
+    margin-bottom: 3px;
+}
+
+nav{
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+    background-color: #24A455;
+    padding: 5px 0 5px 5px
+}
+nav p {
+    color: white;
+}
+
+
+div.main {
+display: flex;
+background-color: #E94D4D;
+width: 97%;
+height: 350px;
+flex-direction: column;
+align-items: center;
+justify-content: space-around;
+border-radius: 10px;
+margin-top: 20px;
+margin-bottom: 20px;
+
+}
+.main_div{
+    width: 100%;
+    padding-left: 20px;
+}
+
+/* .Asides {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 700px;
+
+
+} */
+
+aside {
+    
+    background-color: #F08E41;
+    width: 97%;
+    height: 300px;
+    border-radius: 10px;
+    text-align: center;
+    color: white;
+    margin: 0px 0px 20px 0px;
+    padding-top: 20px;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: white;
+    width: 100%;
+    /* height: 350px; */
+
+}
+
+div p.main_title {
+    color: white;
+}
+
+
+div article {
+    background-color: white;
+    width: 90%;
+    height: 50px;
+    border-radius: 5px;
+    color: black;
+    padding: 10px 0 10px 10px;
+}
+
+footer{
+    color: white;
+    width: 100%;
+    height: 120px;
+    background-color: #B35FD4;
+    border-radius: 10px 10px 0 0;
+    bottom: 0;
+    padding: 15px 0 0 15px;
+}
+
+@media (min-width: 800px) {
+
+    main {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+        justify-content: space-around;
+        background-color: white;
+        width: 100%;
+        height: 100%;
+    }
+
+    .aside_2 {
+    position: absolute;
+    bottom: -80px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    height: 350px;
+    }
+
+    .aside_1 {
+        height: 350px;
+        width: 48%;
+    }
+
+    
+    body {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    div.main {
+        margin-top: 0;
+        
+        }
+
+    footer{
+    position: absolute;
+    bottom: -190px;
+}
+
+header{
+    margin-bottom: 20px;  
+}
+div.main {
+    width: 48%;
+}
+}
+@media (min-width: 1024px) {
+
+    body {
+     height: auto;   
+    }
+
+    div.main {
+        display: flex;
+        background-color: #E94D4D;
+        width: 40%;
+        height: 100%;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        border-radius: 10px;
+        
+        }
+        div.main_div{
+            width: 90%;
+        
+        }
+        
+        aside {
+            
+            background-color: #F08E41;
+            width: 25%;
+            height: 100%;
+            border-radius: 10px;
+            text-align: center;
+            color: white;
+            
+        }
+
+        .aside_2 {
+            position: relative;
+            width: 25%;
+            height: 100%;
+            bottom: auto;
+            margin-top: 0;
+            }
+        
+        .aside_1 {
+            width: 25%;
+            height: 100%;
+            order: -1;
+            
+    }
+        
+        
+        main {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            background-color: white;
+            height: 63vh;
+            padding-top: 25px;
+        }
+        
+        div p.main_title {
+            color: white;
+        }
+        
+        
+        
+        div article {
+            background-color: white;
+            width: 90%;
+            height: 50px;
+            border-radius: 5px;
+            color: black;
+            padding: 10px 0 10px 10px;
+            
+            
+        }
+        
+        footer{
+            color: white;
+            width: 100%;
+            height: 120px;
+            background-color: #B35FD4;
+            border-radius: 10px 10px 0 0;
+            /* position: absolute;  */
+            bottom: 0;
+            padding: 15px 0 0 15px;
+        }
+        
+
+}
